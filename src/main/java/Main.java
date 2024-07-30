@@ -6,6 +6,7 @@ public class Main {
         Gson gson = new Gson();
         String json = gson.toJson(myBox);
         System.out.println(json);
+        System.out.println("");
     }
 
 }
