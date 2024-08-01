@@ -16,4 +16,10 @@ public class Box {
     public double countVolume(){
         return width * height * depth;
     }
+
+    public void setDim(double w, double h, double d){
+        width = w;
+        height = h;
+        depth = d;
+    }
 }
