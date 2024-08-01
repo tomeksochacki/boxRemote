@@ -12,7 +12,6 @@ public class Main {
         System.out.print("Row");
         System.out.print("Row");
         System.out.print(myBox2);
-        System.out.println("ssss");
     }
 
 }
