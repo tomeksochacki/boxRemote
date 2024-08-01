@@ -7,13 +7,16 @@ public class Main {
         myBox.depth = 4;
         Gson gson = new Gson();
         String json = gson.toJson(myBox);
-        System.out.println(json);
+        //System.out.println(json);
 
-        double volFirstBox = myBox.depth * myBox.height * myBox.width;
-        System.out.println("volume of first box = " + volFirstBox);
+        //double volFirstBox = myBox.depth * myBox.height * myBox.width;
+        //System.out.println("volume of first box = " + volFirstBox);
 
-        double volSecondBox = myBox2.depth * myBox2.height * myBox2.width;
-        System.out.println("volume of second box = " + volSecondBox);
+        //double volSecondBox = myBox2.depth * myBox2.height * myBox2.width;
+        //System.out.println("volume of second box = " + volSecondBox);
+
+        myBox.volume();
+        myBox2.volume();
     }
 
 }
