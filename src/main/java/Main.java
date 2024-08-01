@@ -3,6 +3,7 @@ import com.google.gson.Gson;
 public class Main {
     public static void main(String[] args){
         Box myBox = new Box(3.2, 3.0,3.0 );
+        //Box myBox3 = myBox;
         Box myBox2 = new Box(30.2, 30.0,30.0 );
         myBox.depth = 4;
         Gson gson = new Gson();
@@ -15,8 +16,14 @@ public class Main {
         //double volSecondBox = myBox2.depth * myBox2.height * myBox2.width;
         //System.out.println("volume of second box = " + volSecondBox);
 
-        myBox.volume();
-        myBox2.volume();
+        double vol1 = myBox.countVolume();
+        double vol2 = myBox2.countVolume();
+        System.out.println(vol1);
+        System.out.println(vol2);
+
+        /*System.out.println(myBox.hashCode());
+        System.out.println(myBox2.hashCode());
+        System.out.println(myBox3.hashCode());*/
     }
 
 }

@@ -12,4 +12,8 @@ public class Box {
     public void volume(){
         System.out.println(width * height * depth);
     }
+
+    public double countVolume(){
+        return width * height * depth;
+    }
 }
