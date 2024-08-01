@@ -3,6 +3,12 @@ public class Box {
     double height;
     double depth;
 
+    public Box(){
+        width = 10;
+        height = 10;
+        depth = 10;
+    }
+
     public Box(double w, double h, double d) {
         this.width = w;
         this.height = h;

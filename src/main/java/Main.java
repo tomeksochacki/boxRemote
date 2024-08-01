@@ -5,6 +5,7 @@ public class Main {
         Box myBox = new Box(3.2, 3.0,3.0 );
         //Box myBox3 = myBox;
         Box myBox2 = new Box(30.2, 30.0,30.0 );
+        Box myBox3 = new Box();
         myBox.depth = 4;
         Gson gson = new Gson();
         String json = gson.toJson(myBox);
@@ -17,12 +18,14 @@ public class Main {
         //System.out.println("volume of second box = " + volSecondBox);
 
 
-        myBox.setDim(10, 20, 10);
-        myBox2.setDim(300,1,1);
+        //myBox.setDim(10, 20, 10);
+        //myBox2.setDim(300,1,1);
         double vol1 = myBox.countVolume();
         double vol2 = myBox2.countVolume();
+        double vol3 = myBox3.countVolume();
         System.out.println(vol1);
         System.out.println(vol2);
+        System.out.println(vol3);
         /*System.out.println(myBox.hashCode());
         System.out.println(myBox2.hashCode());
         System.out.println(myBox3.hashCode());*/
