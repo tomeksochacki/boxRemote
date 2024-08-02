@@ -4,9 +4,13 @@ public class Box {
     double depth;
 
     public Box(){
-        width = 10;
-        height = 10;
-        depth = 10;
+        width = -1;
+        height = -1;
+        depth = -1;
+    }
+
+    public Box(double len){
+        width = height = depth = len;
     }
 
     public Box(double w, double h, double d) {
