@@ -29,6 +29,12 @@ public class Main {
         /*System.out.println(myBox.hashCode());
         System.out.println(myBox2.hashCode());
         System.out.println(myBox3.hashCode());*/
+
+        OverloadDemo overloadDemo = new OverloadDemo();
+        overloadDemo.test();
+        overloadDemo.test(10);
+        overloadDemo.test(10, 20);
+        overloadDemo.test(30.3);
     }
 
 }
