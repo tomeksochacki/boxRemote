@@ -9,6 +9,7 @@ public class Main {
         myBox.depth = 4;
         Gson gson = new Gson();
         String json = gson.toJson(myBox);
+
         //System.out.println(json);
 
         //double volFirstBox = myBox.depth * myBox.height * myBox.width;
